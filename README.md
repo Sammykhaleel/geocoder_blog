@@ -108,7 +108,7 @@ now go ahead and try that if setup everything right you should see result like t
 
 &nbsp;
 
-If the it's shows the map with blue color you may need to refresh the page to see the locations.
+If it's shows the map with blue color you may need to refresh the page to see the locations.
 
 As you can in the live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a>
 i used foundation and i added more categories its simple as we did it in this tutorial. 
