@@ -12,7 +12,7 @@ First we need to have controllers, models, views and DB i'm using scaffold if yo
 generate scaffold
 <pre>rails g scaffold location latitude:float longitude:float address:string site:string</pre>
 Notice here to use Geocoder we need to set latitude to float and longitude to float to use later on.
-before we install Geocoder let's change the routes to set location to be the home page at http://localhost:3000/ we can do that by going to the config/routes folder and type the following
+before we install Geocoder let's change the routes to set location to be the home page at <a href="http://localhost:3000/" target="blank">http://localhost:3000/</a> we can do that by going to the config/routes folder and type the following
 <pre>root 'locations#index'</pre>
 Install Geocoder:
 <pre>gem install geocoder</pre>
@@ -69,8 +69,7 @@ Next we should not forgot calling the dependencies in the index.html.erb
 
 [/code]
 
-Now we can require <a href="http://underscorejs.org/underscore.js">underscorejs.org/</a>
-the only thing you need to do is to copy the source code and place it under vendor/javascript create new file and call it underscore.js and past the source code in it.
+Now we can require <a href="http://underscorejs.org/underscore.js" target="blank">underscorejs.org/</a> the only thing you need to do is to copy the source code and place it under vendor/javascript create new file and call it underscore.js and past the source code in it.
 
 Next step we need to require Gmaps4rails and underscore in assets/javascript/application.js
 <pre>//= require underscore
@@ -110,7 +109,7 @@ now go ahead and try that if setup everything right you should see result like t
 
 If it's shows the map with blue color you may need to refresh the page to see the locations.
 
-As you can in the live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a>
+As you can see in the live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a>
 i used foundation and i added more categories its simple as we did it in this tutorial. 
 
 Good luck 
