@@ -91,13 +91,16 @@ The final result will look like this
 Here we get latitude and longitude on each location and the site.
 Almost there, we need to add some javascript code in the views/locations/index to display the map
 create script tag and add the following
-<pre>handler = Gmaps.build('Google');
+[code language="javascript"]
+<script>
+handler = Gmaps.build('Google');
 handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   markers = handler.addMarkers(&lt;%=raw @hash.to_json %&gt;);
   handler.bounds.extendWith(markers);
   handler.fitMapToBounds();
 });
-</pre>
+</script>
+[/code]
 now go ahead and try that if setup everything right you should see result like this:
 <a href="https://rubyboard.files.wordpress.com/2014/10/screen-shot-2014-10-16-at-6-38-42-pm.png"><img class="alignnone  wp-image-204" src="https://rubyboard.files.wordpress.com/2014/10/screen-shot-2014-10-16-at-6-38-42-pm.png?w=300" alt="Screen Shot 2014-10-16 at 6.38.42 PM" width="654" height="441" /></a>
 
@@ -105,7 +108,7 @@ now go ahead and try that if setup everything right you should see result like t
 
 &nbsp;
 
-If the shows with blue color you may need to refresh the page to see the locations.
+If the it's shows the map with blue color you may need to refresh the page to see the locations.
 
 As you can in the live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a>
 i used foundation and i added more categories its simple as we did it in this tutorial. 
