@@ -1,10 +1,11 @@
-The idea of this application is to allow Administrator/user to store and find nearby locations based on the categories like education, employment, healthcare, sport and benefits. Live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a>
+The idea of this application is to allow Administrator/user to store and find nearby locations based on the categories like education, employment, healthcare, sport and benefits. Live example <a href="http://sammy-geocoder.herokuapp.com/" target="blank">Here</a> and the source code <a href ="https://github.com/Sammykhaleel/geocoder_blog" target="blank">source code</a>
 
-The purpose of this application i will create one category to get an idea of using:
+For the purpose of this application i will create one category to get an idea of using:
 
 -Gmaps4rails
 
 -Geocoder
+
 <h2>Create locations app</h2>
 First we need to have controllers, models, views and DB i'm using scaffold if you like to have in depth view of how to create these you can follow this <a href="http://guides.rubyonrails.org/getting_started.html" target="blank">blog</a>.
 <pre>rails new geocoder</pre>
